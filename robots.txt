@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glx-championship-4e1m.vercel.app/sitemap.xml
