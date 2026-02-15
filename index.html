@@ -241,7 +241,43 @@
     </div>
   </div>
 
-  <script>
+  
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "GLX Dance Championship 2026",
+  "description": "World's most powerful movementainment platform featuring dance battles and crew competitions",
+  "startDate": "2026-07-15",
+  "endDate": "2026-07-19",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "Dubai, UAE",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    }
+  },
+  "image": "https://glx-championship-4e1m.vercel.app/assets/Glx_logo.png",
+  "organizer": {
+    "@type": "Organization",
+    "name": "Global League X",
+    "url": "https://glx-championship-4e1m.vercel.app"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Battle Registration",
+    "price": "30",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://glx-championship-4e1m.vercel.app/Battle.html",
+    "validFrom": "2026-02-15"
+  }
+}
 
     const privacyLink = document.getElementById("privacyLink");
     const termsLink = document.getElementById("termsLink");
