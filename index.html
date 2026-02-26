@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- SEO Meta Tags - ADD THESE -->
+  <!-- SEO Meta Tags -->
   <meta name="description" content="GLX Dance Championship 2026 in Dubai, UAE. World's most powerful movementainment platform featuring dance battles, crew competitions, and team performances. Register now for the global dance competition of the year!">
   <meta name="keywords" content="GLX Championship, Dance Competition Dubai, Global League X, Dance Battle 2026, Dance Finals, Hip Hop Competition, Breaking Competition, Bollywood Dance, Dance Tournament UAE, Movementainment, Dance Championship 2026">
   <meta name="author" content="GLX Championship">
@@ -29,11 +29,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-<link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="style-responsive.css">
 </head>
 
 <body>
@@ -41,7 +37,7 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-logo">
-      <img src="assets/header_logo.png">
+      <img src="assets/header_logo.png" alt="GLX Championship Logo" loading="lazy">
     </div>
 
     <ul class="nav-links">
@@ -52,13 +48,28 @@
     </ul>
 
     <a href="#register" class="nav-btn">Register</a>
-
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#">Artists</a></li>
+      <li><a href="#">Schedule</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#register" class="mobile-register-btn">Register</a></li>
+    </ul>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
-
-
     <!-- STARS -->
     <div class="stars" id="stars"></div>
 
@@ -72,7 +83,7 @@
       </div>
 
       <h1>CHAMPIONSHIP</h1>
-      <p>World’s most powerful movementainment platform.</p>
+      <p>World's most powerful movementainment platform.</p>
 
       <div class="hero-buttons">
         <a href="#" class="btn-outline">Passes</a>
@@ -80,36 +91,32 @@
         <a href="#" class="btn-outline">WorkShop</a>
         <a href="#experience" class="btn-outline">Experience</a>
       </div>
-
-
     </div>
+    
     <div class="mega">
       <a class="btn-primary" href="#register">Join the Movementainment</a>
     </div>
   </section>
 
-  <!-- ================= GALLERY ================= -->
-  <section class="gsap-gallery">
-
+  <!-- GALLERY -->
+  <section class="gsap-gallery" id="gallery">
     <h2>Gallery</h2>
     <p>Movement · Energy · Emotion</p>
 
-    <div class="slider-wrapper" id="gallery">
-
-      <button class="arrow left" id="prev">‹</button>
-      <button class="arrow right" id="next">›</button>
+    <div class="slider-wrapper">
+      <button class="arrow left" id="prev" aria-label="Previous slide">‹</button>
+      <button class="arrow right" id="next" aria-label="Next slide">›</button>
 
       <div class="slider-track" id="track">
-        <div class="slide"><img src="assets/1.png"></div>
-        <div class="slide"><img src="assets/2.png"></div>
-        <div class="slide"><img src="assets/3.png"></div>
-        <div class="slide"><img src="assets/4.png"></div>
-        
+        <div class="slide"><img src="assets/1.png" alt="GLX Dance Performance 1"></div>
+        <div class="slide"><img src="assets/2.png" alt="GLX Dance Performance 2"></div>
+        <div class="slide"><img src="assets/3.png" alt="GLX Dance Performance 3"></div>
+        <div class="slide"><img src="assets/4.png" alt="GLX Dance Performance 4"></div>
       </div>
-
     </div>
   </section>
 
+  <!-- PARTICIPATING COUNTRIES -->
   <h2 class="section-title" style="margin-top:40px;">Participating Countries</h2>
   <div class="countries-grid">
     <div class="country-box">New Zealand</div>
@@ -127,46 +134,42 @@
     <div class="country-box">UK</div>
     <div class="country-box">USA</div>
   </div>
-  <span></span>
-
 
   <!-- EXPERIENCE -->
   <section id="experience">
     <h2 class="section-title" style="margin-top:40px;">Competition</h2>
     <div class="cards">
-
-      <div class="card"><img src="assets/dance_logo.png">
+      <div class="card">
+        <img src="assets/dance_logo.png" alt="Dance Competition" loading="lazy">
         <h3>Dance</h3>
       </div>
-      <div class="card"><img src="assets/music_logo.png">
+      <div class="card">
+        <img src="assets/music_logo.png" alt="Music Competition" loading="lazy">
         <h3>Music</h3>
       </div>
-      <div class="card"><img src="assets/gaming_logo.png">
+      <div class="card">
+        <img src="assets/gaming_logo.png" alt="E-Sports Competition" loading="lazy">
         <h3>E-Sports</h3>
       </div>
-      <div class="card"><img src="assets/sports_logo.png">
+      <div class="card">
+        <img src="assets/sports_logo.png" alt="Sports Competition" loading="lazy">
         <h3>Sports</h3>
       </div>
     </div>
   </section>
 
- <!-- Register -->
-  
-  <!-- <a href="battle.html" class="btn-outline">Battle</a>
-<a href="finals.html" class="btn-outline">Finals</a> -->
+  <!-- REGISTER -->
+  <section class="registration-choice" id="register">
+    <h2 class="section-title">Register Now</h2>
+    <p>Choose your competition category</p>
 
-<section class="registration-choice" id="register">
-  <h2 class="section-title">Register Now</h2>
-  <p>Choose your competition category</p>
+    <div class="choice-buttons">
+      <a href="Battle.html" class="choice-btn">🔥 Battle Registration</a>
+      <a href="Finals.html" class="choice-btn">🏆 Crew & Team Registration</a>
+    </div>
+  </section>
 
-  <div class="choice-buttons">
-    <a href="Battle.html" class="choice-btn">🔥 Battle Registration</a>
-    <a href="Finals.html" class="choice-btn">🏆 Crew & Team Registration</a>
-  </div>
-</section>
-
-
-  <!-- About -->
+  <!-- ABOUT -->
   <section class="section" id="about">
     <div class="container">
       <h2 class="section-title">About GLX Champion</h2>
@@ -178,33 +181,24 @@
             of the year for world talent and a leading new-age competition.
           </p>
           <p>
-            ​It's a groundbreaking concept that unites Dance, Sports, Music and e-sports under a single IP. The League-X
+            It's a groundbreaking concept that unites Dance, Sports, Music and e-sports under a single IP. The League-X
             is dedicated to finding the best crews, teams, and individuals across diverse disciplines from every country
             of their artistry ability in the world stage and reach them across global audience and brands.
           </p>
           <p>
-            ​Its core mission is to lead in building global talent platforms, fostering a community, and setting a new
+            Its core mission is to lead in building global talent platforms, fostering a community, and setting a new
             benchmark for recognizing and developing future global stars.
           </p>
           <figcaption class="about-caption">Celebrating global talent in dance, sports, music & e-sports</figcaption>
         </article>
         <div class="about-visual" aria-hidden="true">
-          <img src="./assets/Glx_logo.png" alt="Dancers representing GLX Champion movement" width="320" height="220"
-            loading="lazy" />
+          <img src="./assets/Glx_logo.png" alt="GLX Championship Logo" width="320" height="220" loading="lazy" />
         </div>
-
-        <!-- </div> -->
       </div>
     </div>
-
-
-
   </section>
 
- 
-
-
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="footer-inner">
       <p class="footer-copy">&copy; 2025 <span>GL-X</span>. All rights reserved.</p>
@@ -220,7 +214,7 @@
   <!-- Privacy Policy Modal -->
   <div id="privacyModal" class="modal">
     <div class="modal-content">
-      <button class="modal-close">&times;</button>
+      <button class="modal-close" aria-label="Close modal">&times;</button>
       <h2>Privacy Policy</h2>
       <p>
         GL-X respects your privacy. We collect only necessary information to
@@ -232,7 +226,7 @@
   <!-- Terms Modal -->
   <div id="termsModal" class="modal">
     <div class="modal-content">
-      <button class="modal-close">&times;</button>
+      <button class="modal-close" aria-label="Close modal">&times;</button>
       <h2>Terms of Service</h2>
       <p>
         By accessing GL-X, you agree to comply with all platform rules and
@@ -241,52 +235,80 @@
     </div>
   </div>
 
-  
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "GLX Dance Championship 2026",
-  "description": "World's most powerful movementainment platform featuring dance battles and crew competitions",
-  "startDate": "2026-07-15",
-  "endDate": "2026-07-19",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "Dubai, UAE",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Dubai",
-      "addressCountry": "AE"
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "GLX Dance Championship 2026",
+    "description": "World's most powerful movementainment platform featuring dance battles and crew competitions",
+    "startDate": "2026-07-15",
+    "endDate": "2026-07-19",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Dubai, UAE",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      }
+    },
+    "image": "https://glx-championship-4e1m.vercel.app/assets/Glx_logo.png",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Global League X",
+      "url": "https://glx-championship-4e1m.vercel.app"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "Battle Registration",
+      "price": "30",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://glx-championship-4e1m.vercel.app/Battle.html",
+      "validFrom": "2026-02-15"
     }
-  },
-  "image": "https://glx-championship-4e1m.vercel.app/assets/Glx_logo.png",
-  "organizer": {
-    "@type": "Organization",
-    "name": "Global League X",
-    "url": "https://glx-championship-4e1m.vercel.app"
-  },
-  "offers": {
-    "@type": "Offer",
-    "name": "Battle Registration",
-    "price": "30",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://glx-championship-4e1m.vercel.app/Battle.html",
-    "validFrom": "2026-02-15"
   }
-}
+  </script>
 
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    // Modal functionality
     const privacyLink = document.getElementById("privacyLink");
     const termsLink = document.getElementById("termsLink");
     const privacyModal = document.getElementById("privacyModal");
     const termsModal = document.getElementById("termsModal");
     const closeBtns = document.querySelectorAll(".modal-close");
 
-    privacyLink.onclick = () => privacyModal.classList.add("active");
-    termsLink.onclick = () => termsModal.classList.add("active");
+    privacyLink.onclick = (e) => {
+      e.preventDefault();
+      privacyModal.classList.add("active");
+    };
+    
+    termsLink.onclick = (e) => {
+      e.preventDefault();
+      termsModal.classList.add("active");
+    };
 
     closeBtns.forEach(btn => {
       btn.onclick = () => btn.closest(".modal").classList.remove("active");
@@ -298,15 +320,14 @@
       }
     };
 
-
-
+    // Gallery slider
     const track = document.getElementById("track");
     const slides = document.querySelectorAll(".slide");
-    const slideWidth = slides[0].offsetWidth + 30;
+    const slideWidth = slides[0]?.offsetWidth + 30 || 350;
 
     let index = 0;
 
-    // CLONE for infinite loop
+    // Clone for infinite loop
     slides.forEach(slide => {
       const clone = slide.cloneNode(true);
       track.appendChild(clone);
@@ -314,21 +335,18 @@
 
     const allSlides = document.querySelectorAll(".slide");
 
-    // INITIAL STATE
+    // Initial state
     setActive();
-
     gsap.set(track, { x: 0 });
 
     function move(dir) {
       index += dir;
-
       gsap.to(track, {
         x: -slideWidth * index,
         duration: .8,
         ease: "power3.inOut",
         onComplete: loopFix
       });
-
       setActive();
     }
 
@@ -346,17 +364,18 @@
 
     function setActive() {
       allSlides.forEach(s => s.classList.remove("active"));
-      allSlides[index].classList.add("active");
+      if (allSlides[index]) {
+        allSlides[index].classList.add("active");
+      }
     }
 
     document.getElementById("next").onclick = () => move(1);
     document.getElementById("prev").onclick = () => move(-1);
 
-    /* AUTO SLIDE (optional, smooth) */
+    // Auto slide
     setInterval(() => move(1), 5000);
 
-
-    /* STAR GENERATOR */
+    // Star generator
     const stars = document.getElementById("stars");
     for (let i = 0; i < 80; i++) {
       const s = document.createElement("div");
@@ -366,22 +385,20 @@
       stars.appendChild(s);
     }
 
-// Smooth scroll for all anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
-    }
-  });
-});
-
+    });
   </script>
 
 </body>
-
 </html>
