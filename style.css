@@ -1,3 +1,5 @@
+
+
 /* ================= BASE STYLES ================= */
 * {
   margin: 0;
@@ -172,21 +174,27 @@ body.menu-open {
 /* ================= HERO ================= */
 .hero {
   min-height: 100vh;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding: 120px 8% 80px 8%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .85)),
-    url("assets/home_bg.png") center top / cover no-repeat;
-  background-attachment: scroll;
+    url("assets/home_bg.png") center 15% / cover no-repeat;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* TEXT STARTS FROM TOP */
   align-items: flex-start;
-  justify-content: center;
-  padding-left: 8%;
-  padding-right: 8%;
   overflow: hidden;
-  /* padding-top:10px; */
+  text-align: left;
+  padding-top: 100px;
+  background-position: center 20%;
 }
+
+.babloo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+ 
+} 
 
 @media (max-width: 900px) {
   .hero {
@@ -250,12 +258,17 @@ body.menu-open {
   position: relative;
   z-index: 2;
   max-width: 650px;
+  padding: 20px;
+
 }
 
 .hero small {
   letter-spacing: 2px;
   opacity: .8;
-  font-size: clamp(10px, 2vw, 14px);
+  font-size: 20px;
+  display: block;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-marquee {
@@ -326,6 +339,7 @@ body.menu-open {
   bottom: 10%;
   z-index: 3;
   text-align: center;
+ 
 }
 
 .btn-outline {
@@ -1246,4 +1260,3 @@ body.menu-open {
     display: none !important;
   }
 }
-
