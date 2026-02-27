@@ -173,7 +173,7 @@ body.menu-open {
 
 /* ================= HERO ================= */
 .hero {
-  min-height: 100vh;
+  min-height: 130vh;
   padding: 120px 8% 80px 8%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .85)),
@@ -266,9 +266,7 @@ body.menu-open {
   letter-spacing: 2px;
   opacity: .8;
   font-size: 20px;
-  display: block;
-  justify-content: center;
-  text-align: center;
+ 
 }
 
 .hero-marquee {
@@ -319,6 +317,7 @@ body.menu-open {
   background: #fff;
   color: #000;
   padding: 15px 30px;
+ 
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
@@ -359,13 +358,15 @@ body.menu-open {
 
 /* ================= GALLERY SECTION ================= */
 .gsap-gallery {
-  padding: 100px 8%;
+  padding: 50px 8%;
   background: linear-gradient(180deg, #0b0214, #05000c);
   text-align: center;
+ 
 }
 
 .gsap-gallery h2 {
   font-size: clamp(32px, 6vw, 56px);
+  
   margin-bottom: 10px;
 }
 
