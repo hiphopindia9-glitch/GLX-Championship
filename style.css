@@ -173,7 +173,7 @@ body.menu-open {
 
 /* ================= HERO ================= */
 .hero {
-  min-height: 130vh;
+  min-height: 110vh;
   padding: 120px 8% 80px 8%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .85)),
