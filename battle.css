@@ -1,3 +1,96 @@
+/* ===== FEES SECTION ===== */
+.fees-section {
+  margin-top: 30px;
+}
+
+.fees-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #ffcc00, #ff66ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fees-table {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 28px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+.fee-row:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,204,0,0.4);
+  box-shadow: 0 10px 30px rgba(255,204,0,0.12);
+}
+
+.fee-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.fee-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+
+  color: rgba(255,255,255,0.9);
+}
+
+.fee-price strong {
+  color: #ffcc00;
+}
+
+.payment-note {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.payment-note strong {
+  color: #ffcc00;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .fee-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .fee-price {
+    text-align: left;
+  }
+
+  .fees-title {
+    font-size: 1.5rem;
+  }
+}
+
 /* ===== BASE STYLES ===== */
 * {
   margin: 0;
