@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "glx-championship-git-main-.*"
+        }
+      ],
+      "destination": "https://glx-championship.vercel.app",
+      "permanent": true
+    }
+  ]
+}
