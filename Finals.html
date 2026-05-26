@@ -369,7 +369,7 @@
             <div class="header">
                 <h1>GLX Dance Championship 2026 – FINALS</h1>
                 <p>Fill out the form carefully for registration</p>
-                <div class="badge">ENTRY DEADLINE: 15 June 2026</div>
+                <div class="badge">ENTRY DEADLINE: 30 June 2026</div>
                 <p>Championship Date: 15–19 July 2026 • Bangkok</p>
             </div>
 
@@ -423,7 +423,7 @@
                 </ul>
                 <br />
                 <ul>
-                    <li><strong>Teams Division:</strong> 15–30 members</li>
+                    <li><strong>Teams Division:</strong> 8–30 members</li>
                     <li>Folklore – 3:00 to 3:30 minutes</li>
                     <li>Bollywood – 3:00 to 3:30 minutes</li>
                     <li>School – 3:00 to 3:30 minutes</li>
@@ -524,7 +524,7 @@
 
                 <p class="payment-note">
                     Send proof of payment to:
-                    <strong>registration@glxchampionship.com</strong>
+                    <strong>team@glxchampionship.com</strong>
                 </p>
 
                 <div class="important-note">
@@ -540,7 +540,7 @@
 
                         <li>LAST DATE FOR REGISTRATION: 10th JULY</li>
 
-                        <li>EARLY BIRD CLOSED BY 31st JUNE</li>
+                        <li>EARLY BIRD CLOSED BY 30th JUNE</li>
 
                         <li>
                             FOR DETAILS MAIL US AT
@@ -607,16 +607,16 @@
                                     restriction
                                 </option>
                                 <option>
-                                    Teams Division (15-30 members): Folklore
+                                    Teams Division (8-30 members): Folklore
                                 </option>
                                 <option>
-                                    Teams Division (15-30 members): Bollywood
+                                    Teams Division (8-30 members): Bollywood
                                 </option>
                                 <option>
-                                    Teams Division (15-30 members): School
+                                    Teams Division (8-30 members): School
                                 </option>
                                 <option>
-                                    Teams Division (15-30 members): College &
+                                    Teams Division (8-30 members): College &
                                     University
                                 </option>
                             </select>
@@ -637,12 +637,13 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Number of Members *</label>
-                                <select name="numberOfMembers" required>
+                                <input type="number" name="numberOfMembers" min="0" max="100" id="numberOfMembers">
+                                <!-- <select name="numberOfMembers" required>
                                     <option value="">Please Select</option>
                                     <option>3 – 7</option>
                                     <option>8 – 14</option>
                                     <option>15 – 40</option>
-                                </select>
+                                </select> -->
                             </div>
 
                             <div class="form-group">
@@ -1110,7 +1111,7 @@
                 </div>
             </section>
 
-            <div class="footer">© 2026 GLX Dance Championship • Dubai, UAE</div>
+            <div class="footer">© 2025 - GLX Championship Organised by HipHop India Dance Co., All rights reserved.</div>
         </div>
 
         <script>
@@ -1124,6 +1125,8 @@
                 }
 
                 memberCount++;
+                const membersInput = document.getElementById("numberOfMembers");
+                if(membersInput) membersInput.value = memberCount;
 
                 const container = document.getElementById("membersContainer");
 
