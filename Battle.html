@@ -137,31 +137,39 @@ Replace it with this:
                     </div> -->
 
                     <div class="fee-row">
-                        <div class="fee-name">SOLO 1 CATEGORY</div>
+                        <div class="fee-name">SOLO-SINGLE CATEGORY</div>
+                        <div class="fee-price">
+                            <span>Early Bird: <strong>US$100</strong></span>
+                            <span>After 1st Jul: <strong>US$125</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="fee-row">
+                        <div class="fee-name">SOLO-DOUBLE CATEGORY</div>
+                        <div class="fee-price">
+                            <span>Early Bird: <strong>US$160</strong></span>
+                            <span>After 1st Jul: <strong>US$210</strong></span>
+                        </div>
+                    </div>
+                
+                    <div class="fee-row">
+                        <div class="fee-name">SOLO-TRIPLE CATEGORY</div>
+                        <div class="fee-price">
+                            <span>Early Bird: <strong>US$190</strong></span>
+                            <span>After 1st Jul: <strong>US$240</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="fee-row">
+                        <div class="fee-name">BATTLE SINGLE CATEGORY</div>
                         <div class="fee-price">
                             <span>Early Bird: <strong>US$25</strong></span>
-                            <span>After 1st Jul: <strong>US$40</strong></span>
-                        </div>
-                    </div>
-
-                    <div class="fee-row">
-                        <div class="fee-name">SOLO 2 CATEGORIES</div>
-                        <div class="fee-price">
-                            <span>Early Bird: <strong>US$40</strong></span>
-                            <span>After 1st Jul: <strong>US$60</strong></span>
-                        </div>
-                    </div>
-
-                    <div class="fee-row">
-                        <div class="fee-name">BATTLE 1 CATEGORY</div>
-                        <div class="fee-price">
-                            <span>Early Bird: <strong>US$20</strong></span>
                             <span>After 1st Jul: <strong>US$30</strong></span>
                         </div>
                     </div>
 
                     <div class="fee-row">
-                        <div class="fee-name">BATTLE 2 CATEGORIES</div>
+                        <div class="fee-name">BATTLE DOUBLE CATEGORIES</div>
                         <div class="fee-price">
                             <span>Early Bird: <strong>US$30</strong></span>
                             <span>After 1st Jul: <strong>US$40</strong></span>
@@ -169,7 +177,7 @@ Replace it with this:
                     </div>
                     
                     <div class="fee-row">
-                        <div class="fee-name">BATTLE 3 CATEGORIES</div>
+                        <div class="fee-name">BATTLE TRIPLE CATEGORIES</div>
                         <div class="fee-price">
                             <span>Early Bird: <strong>US$45</strong></span>
                             <span>After 1st Jul: <strong>US$60</strong></span>
@@ -177,7 +185,7 @@ Replace it with this:
                     </div>
 
                     <div class="fee-row">
-                        <div class="fee-name">CREW 1 CATEGORY</div>
+                        <div class="fee-name">CREW SINGLE CATEGORY</div>
                         <div class="fee-price">
                             <span>Early Bird: <strong>US$70</strong></span>
                             <span>After 1st Jul: <strong>US$100</strong></span>
@@ -185,7 +193,7 @@ Replace it with this:
                     </div>
 
                     <div class="fee-row">
-                        <div class="fee-name">CREW 2 CATEGORIES</div>
+                        <div class="fee-name">CREW DOUBLE CATEGORIES</div>
                         <div class="fee-price">
                             <span>Early Bird: <strong>US$100</strong></span>
                             <span>After 1st Jul: <strong>US$130</strong></span>
@@ -256,67 +264,98 @@ Now add this CSS to your `battle.css` file:
                     <!-- BATTLE SECTION -->
                     <div class="form-group">
                         <label>Battle Section *</label>
-                        <select name="battleSection" required>
-                            <option value="">Please Select</option>
-                            <option>
-                                Showcase Division: Junior Hip Hop (15yrs &
-                                under)
-                            </option>
-                            <option>
-                                Showcase Division: Adult Hip Hop (16yrs & over)
-                            </option>
-                            <option>
-                                Showcase Division: Junior Bollywood (15yrs &
-                                under)
-                            </option>
-                            <option>
-                                Showcase Division: Adult Bollywood (16yrs &
-                                over)
-                            </option>
-                            <option>
-                                Showcase Division: Junior Folklore (15yrs &
-                                under)
-                            </option>
-                            <option>
-                                Showcase Division: Adult Folklore (16yrs & over)
-                            </option>
-                            <option>
-                                Batttle Division: Next Gen 2v2 Hip Hop (12yrs &
-                                under)
-                            </option>
-                            <option>
-                                Batttle Division: Next Gen 2v2 Hip Hop
-                                (13-16yrs)
-                            </option>
-                            <option>
-                                Batttle Division: Next Gen 2v2 Breaking (16yrs &
-                                under)
-                            </option>
-                            <option>
-                                Batttle Division: Next Gen 2v2 Krump (17yrs &
-                                under)
-                            </option>
-                            <option>
-                                Batttle Division: Next Gen 2v2 Afro Styles
-                                (16yrs & under)
-                            </option>
-                            <option>
-                                Tshirt Batttle Division: Open 2v2 Afro Styles
-                                (no age restriction)
-                            </option>
-                            <option>
-                                Batttle Division: Open 3v3 Hip Hop (no age
-                                restriction)
-                            </option>
-                            <option>
-                                Batttle Division: Open 3v3 Breaking (no age
-                                restriction)
-                            </option>
-                            <option>
-                                Batttle Division: 5v5 Crew (All styles, no age
-                                restriction)
-                            </option>
-                        </select>
+                        <div class="custom-select-wrapper" id="battleSectionWrapper">
+                            <div class="custom-select-trigger" tabindex="0">
+                                <span class="trigger-text" style="opacity: 0.6;">Please Select</span>
+                                <span class="arrow-icon">
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="custom-options-dropdown">
+                                <div class="dropdown-header-actions">
+                                    <button type="button" class="action-btn select-all-btn">Select All</button>
+                                    <button type="button" class="action-btn clear-all-btn">Clear All</button>
+                                </div>
+                                <div class="options-scroll-container">
+                                    <div class="option-group-title">Showcase Division</div>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Showcase Division: Junior HipHop/Openstyle (15yrs & under)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Junior HipHop/Openstyle (15yrs & under)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Showcase Division: Adult HipHop/Openstyle (16yrs & Above)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adult HipHop/Openstyle (16yrs & Above)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Showcase Division: Junior Bollywood (15yrs & under)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Junior Bollywood (15yrs & under)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Showcase Division: Adult Bollywood (16yrs & Above)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adult Bollywood (16yrs & Above)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Showcase Division: Junior Folklore (15yrs & under)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Junior Folklore (15yrs & under)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Showcase Division: Adult Folklore (16yrs & Above)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adult Folklore (16yrs & Above)</span>
+                                    </label>
+
+                                    <div class="option-group-title">Battle Division</div>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Junior 2v2 Hip Hop (15yrs & under)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Junior 2v2 Hip Hop (15yrs & under)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Adults 2v2 Hip Hop (Open for All) (13-16yrs)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adults 2v2 Hip Hop (Open for All) (13-16yrs)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Junior 2v2 Breaking (15yrs & under)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Junior 2v2 Breaking (15yrs & under)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Adults 3v3 Breaking (Open for All)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adults 3v3 Breaking (Open for All)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Adults 1v1 Krump (Open for All)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adults 1v1 Krump (Open for All)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Junior 2v2 Afro (15yrs & under)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Junior 2v2 Afro (15yrs & under)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: Adults 2v2 Afro (Open for All)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">Adults 2v2 Afro (Open for All)</span>
+                                    </label>
+                                    <label class="custom-option">
+                                        <input type="checkbox" name="battleSection" value="Batttle Division: 5v5 Crew (All styles, no age restriction)">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="option-text">5v5 Crew (All styles, no age restriction)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="validation-error-text" id="battleSectionError">Please select at least one Battle Section.</div>
                     </div>
 
                     <!-- FIRST NAME & LAST NAME -->
@@ -958,6 +997,18 @@ Now add this CSS to your `battle.css` file:
                     const submitBtn = this.querySelector(".submit-btn");
                     const originalText = submitBtn.textContent;
 
+                    // Validate custom multi-select (at least one option must be selected)
+                    const checkedSections = Array.from(document.querySelectorAll('input[name="battleSection"]:checked'));
+                    const selectWrapper = document.getElementById('battleSectionWrapper');
+                    if (checkedSections.length === 0) {
+                        selectWrapper.classList.add('invalid');
+                        alert("Please select at least one Battle Section.");
+                        selectWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        return;
+                    } else {
+                        selectWrapper.classList.remove('invalid');
+                    }
+
                     // Show loading state
                     submitBtn.textContent = "Submitting...";
                     submitBtn.disabled = true;
@@ -970,10 +1021,16 @@ Now add this CSS to your `battle.css` file:
                         targetSheet: "Battle Registrations",
                     };
 
-                    // Convert FormData to object
+                    // Convert FormData to object, gathering multiple values for battleSection
+                    const battleSections = [];
                     for (let [key, value] of formData.entries()) {
-                        data[key] = value;
+                        if (key === 'battleSection') {
+                            battleSections.push(value);
+                        } else {
+                            data[key] = value;
+                        }
                     }
+                    data.battleSection = battleSections.join(", ");
 
                     // Combine country code with mobile number for easy reading
                     if (data.countryCode && data.mobileNumber) {
@@ -1030,6 +1087,87 @@ Now add this CSS to your `battle.css` file:
                         }, 3000);
                     }
                 });
+
+            // ========================================
+            // CUSTOM MULTI-SELECT DROPDOWN INTERACTION
+            // ========================================
+            (function() {
+                const selectWrapper = document.getElementById('battleSectionWrapper');
+                if (!selectWrapper) return;
+                
+                const trigger = selectWrapper.querySelector('.custom-select-trigger');
+                const triggerText = trigger.querySelector('.trigger-text');
+                const checkboxes = selectWrapper.querySelectorAll('input[name="battleSection"]');
+                const selectAllBtn = selectWrapper.querySelector('.select-all-btn');
+                const clearAllBtn = selectWrapper.querySelector('.clear-all-btn');
+
+                function updateTrigger() {
+                    const selected = Array.from(checkboxes)
+                        .filter(cb => cb.checked)
+                        .map(cb => {
+                            let val = cb.value;
+                            return val.replace("Showcase Division: ", "").replace("Batttle Division: ", "");
+                        });
+
+                    if (selected.length === 0) {
+                        triggerText.textContent = "Please Select";
+                        triggerText.style.opacity = "0.6";
+                    } else if (selected.length <= 2) {
+                        triggerText.textContent = selected.join(", ");
+                        triggerText.style.opacity = "1";
+                        selectWrapper.classList.remove('invalid');
+                    } else {
+                        triggerText.textContent = `${selected.length} Categories Selected`;
+                        triggerText.style.opacity = "1";
+                        selectWrapper.classList.remove('invalid');
+                    }
+                }
+
+                // Toggle dropdown
+                trigger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    selectWrapper.classList.toggle('active');
+                });
+
+                // Prevent dropdown from closing when clicking inside it
+                selectWrapper.querySelector('.custom-options-dropdown').addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', function() {
+                    selectWrapper.classList.remove('active');
+                });
+
+                // Keyboard accessibility
+                trigger.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectWrapper.classList.toggle('active');
+                    } else if (e.key === 'Escape') {
+                        selectWrapper.classList.remove('active');
+                    }
+                });
+
+                // Checkbox change handlers
+                checkboxes.forEach(cb => {
+                    cb.addEventListener('change', updateTrigger);
+                });
+
+                // Select All
+                selectAllBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    checkboxes.forEach(cb => cb.checked = true);
+                    updateTrigger();
+                });
+
+                // Clear All
+                clearAllBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    checkboxes.forEach(cb => cb.checked = false);
+                    updateTrigger();
+                });
+            })();
         </script>
     </body>
 </html>
