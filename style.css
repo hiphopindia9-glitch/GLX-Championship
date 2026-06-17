@@ -1443,3 +1443,126 @@ body.menu-open {
     display: none !important;
   }
 }
+
+/* ================= RULES & REGULATIONS ================= */
+.rules-download-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.rules-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px 40px;
+  border-radius: 24px;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.rules-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e326ff, #26b3e1);
+}
+
+.rules-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(38, 179, 225, 0.4);
+  box-shadow: 0 25px 50px rgba(227, 38, 255, 0.15), 
+              0 0 30px rgba(38, 179, 225, 0.1);
+}
+
+.rules-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(227, 38, 255, 0.2), rgba(38, 179, 225, 0.2));
+  border: 1px solid rgba(38, 179, 225, 0.4);
+  color: #26b3e1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.rules-card h3 {
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 700;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #fff, #ddd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rules-card p {
+  font-size: clamp(14px, 2vw, 15px);
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rules-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(90deg, #26b3e1, #e326ff);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(14px, 2.5vw, 16px);
+  padding: 16px 36px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(38, 179, 225, 0.3), 
+              0 0 40px rgba(227, 38, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.rules-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(38, 179, 225, 0.6), 
+              0 0 50px rgba(227, 38, 255, 0.5);
+}
+
+.rules-btn:active {
+  transform: scale(0.98);
+}
+
+.download-icon {
+  transition: transform 0.3s ease;
+}
+
+.rules-btn:hover .download-icon {
+  animation: downloadBounce 1s infinite alternate;
+}
+
+@keyframes downloadBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
