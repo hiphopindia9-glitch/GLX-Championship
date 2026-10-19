@@ -1,0 +1,835 @@
+/* ================= ROAD MAP 2027 PAGE STYLES ================= */
+
+/* Road Map Hero */
+.roadmap-hero {
+  position: relative;
+  padding: 160px 8% 80px 8%;
+  background: radial-gradient(circle at 50% 20%, rgba(227, 38, 255, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at 80% 50%, rgba(38, 179, 225, 0.12) 0%, transparent 50%),
+              linear-gradient(180deg, #06010d 0%, #0e031a 50%, #0b0214 100%);
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.roadmap-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.roadmap-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.roadmap-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(38, 179, 225, 0.12);
+  border: 1px solid rgba(38, 179, 225, 0.35);
+  color: #26b3e1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.roadmap-title {
+  font-size: clamp(34px, 5.5vw, 56px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, #e326ff, #26b3e1, #ffd166, #e326ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% auto;
+  animation: titleGlow 8s linear infinite;
+}
+
+.roadmap-subtitle {
+  font-size: clamp(14px, 2vw, 17px);
+  color: #cfc6dc;
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+/* Quick KPI Counter Pills */
+.roadmap-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.roadmap-stat-box {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 18px 20px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.roadmap-stat-box:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(227, 38, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+.roadmap-stat-num {
+  display: block;
+  font-size: clamp(26px, 3.5vw, 34px);
+  font-weight: 800;
+  background: linear-gradient(90deg, #e326ff, #26b3e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.roadmap-stat-label {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* ================= FEATURED SHOWCASE STOPS ================= */
+.roadmap-featured-section {
+  padding: 80px 8%;
+  background: #0b0214;
+  position: relative;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-head-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #aaa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.section-head-title {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.section-head-sub {
+  font-size: clamp(13px, 2vw, 15px);
+  color: #999;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.featured-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.featured-stop-card {
+  background: rgba(18, 7, 28, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.featured-stop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(227, 38, 255, 0.22);
+  border-color: rgba(227, 38, 255, 0.5);
+}
+
+.featured-stop-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.featured-stop-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.featured-stop-card:hover .featured-stop-media img {
+  transform: scale(1.08);
+}
+
+.featured-stop-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(11, 2, 20, 0.85) 100%);
+}
+
+.featured-status-pill {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.featured-status-pill.confirmed,
+.featured-status-pill.qualified {
+  background: rgba(6, 214, 160, 0.22);
+  border: 1px solid rgba(6, 214, 160, 0.6);
+  color: #06d6a0;
+  box-shadow: 0 0 14px rgba(6, 214, 160, 0.35);
+}
+
+.qualified-check-pill {
+  font-size: 11px;
+  font-weight: 800;
+  color: #06d6a0;
+  background: rgba(6, 214, 160, 0.12);
+  border: 1px solid rgba(6, 214, 160, 0.35);
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 0.5px;
+}
+
+.featured-status-pill.finals {
+  background: linear-gradient(90deg, #e326ff, #26b3e1);
+  border: 1px solid transparent;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(227, 38, 255, 0.5);
+}
+
+.featured-status-pill.soon {
+  background: rgba(255, 183, 3, 0.2);
+  border: 1px solid rgba(255, 183, 3, 0.5);
+  color: #ffd166;
+}
+
+.featured-stop-body {
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.featured-stop-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.featured-stop-flag {
+  font-size: 18px;
+}
+
+.featured-stop-dates {
+  font-size: 12px;
+  font-weight: 700;
+  color: #26b3e1;
+}
+
+.featured-stop-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.featured-stop-city {
+  font-size: 13px;
+  color: #bbb;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.featured-stop-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.featured-badge-tag {
+  font-size: 11px;
+  color: #888;
+  font-weight: 600;
+}
+
+.featured-action-btn {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #26b3e1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.featured-action-btn:hover {
+  color: #e326ff;
+  transform: translateX(4px);
+}
+
+/* ================= ALL 13 QUALIFIERS LIST ================= */
+.roadmap-full-section {
+  padding: 80px 8%;
+  background: radial-gradient(circle at 50% 0%, rgba(38, 179, 225, 0.08) 0%, transparent 60%),
+              linear-gradient(180deg, #0b0214 0%, #06010d 100%);
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.roadmap-filter-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.roadmap-filter-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rm-filter-btn {
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: none;
+  background: transparent;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rm-filter-btn .count-tag {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+.rm-filter-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.rm-filter-btn.active {
+  background: linear-gradient(90deg, #e326ff, #26b3e1);
+  color: #fff;
+  box-shadow: 0 0 16px rgba(227, 38, 255, 0.45);
+}
+
+.rm-filter-btn.active .count-tag {
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+/* 13 Tour Grid */
+.qualifiers-tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.tour-stop-card {
+  background: rgba(18, 7, 28, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tour-stop-card.hidden {
+  display: none !important;
+}
+
+.tour-stop-card:hover {
+  transform: translateY(-4px);
+  background: rgba(25, 9, 36, 0.85);
+  border-color: rgba(38, 179, 225, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(38, 179, 225, 0.15);
+}
+
+.tour-stop-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.tour-stop-num {
+  font-size: 11px;
+  font-weight: 800;
+  color: #888;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.tour-stop-body {
+  margin-bottom: 16px;
+}
+
+.tour-stop-header-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.tour-stop-flag {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.tour-stop-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.tour-stop-dates {
+  font-size: 13px;
+  font-weight: 600;
+  color: #26b3e1;
+  margin-bottom: 4px;
+}
+
+.tour-stop-dates.soon {
+  color: #ffd166;
+}
+
+.tour-stop-city {
+  font-size: 12.5px;
+  color: #888;
+  margin: 0;
+}
+
+.tour-stop-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tour-stop-region {
+  font-size: 11px;
+  color: #777;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tour-stop-action {
+  font-size: 12px;
+  font-weight: 700;
+  color: #26b3e1;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.tour-stop-action:hover {
+  color: #e326ff;
+  transform: translateX(3px);
+}
+
+/* ================= 3-PHASE PROGRESSION TIMELINE ================= */
+.roadmap-phases-section {
+  padding: 80px 8%;
+  background: #080210;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.phases-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.phase-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.phase-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(227, 38, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.phase-num-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #e326ff, #26b3e1);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.phase-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.phase-desc {
+  font-size: 13.5px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* ================= DESTINATION FINALE BANNER ================= */
+.roadmap-destination-section {
+  padding: 100px 8%;
+  background: radial-gradient(circle at 50% 50%, rgba(227, 38, 255, 0.12) 0%, transparent 70%),
+              linear-gradient(180deg, #080210 0%, #05000a 100%);
+  text-align: center;
+}
+
+.destination-banner-box {
+  max-width: 960px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, rgba(25, 9, 38, 0.95), rgba(10, 3, 17, 0.95));
+  border: 1px solid rgba(227, 38, 255, 0.4);
+  border-radius: 28px;
+  padding: 60px 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 50px rgba(227, 38, 255, 0.2);
+}
+
+.destination-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #e326ff, #26b3e1);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.destination-title {
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.destination-desc {
+  font-size: clamp(14px, 2vw, 16px);
+  color: #ccc;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 35px auto;
+}
+
+.destination-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= CHINA LIVE PHOTO STRIP ================= */
+.media-photo-counter {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.china-photo-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 6px 2px;
+  margin: 10px 0 14px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(227, 38, 255, 0.4) transparent;
+}
+
+.china-photo-strip::-webkit-scrollbar {
+  height: 4px;
+}
+
+.china-photo-strip::-webkit-scrollbar-thumb {
+  background: rgba(227, 38, 255, 0.5);
+  border-radius: 4px;
+}
+
+.china-thumb-btn {
+  flex: 0 0 52px;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.china-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.china-thumb-btn:hover {
+  border-color: rgba(38, 179, 225, 0.9);
+  transform: translateY(-2px);
+}
+
+.china-thumb-btn.active {
+  border-color: #e326ff;
+  box-shadow: 0 0 12px rgba(227, 38, 255, 0.7);
+  transform: scale(1.05);
+.photo-strip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #26b3e1;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qualified-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 6px;
+}
+
+.qualified-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 9px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ================= TOUR STOP CARD MEDIA ================= */
+.tour-stop-card.has-media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tour-stop-card-media {
+  position: relative;
+  width: 100%;
+  height: 165px;
+  overflow: hidden;
+  background: #080210;
+}
+
+.tour-stop-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.tour-stop-card:hover .tour-stop-card-media img {
+  transform: scale(1.08);
+}
+
+.tour-stop-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(18, 7, 28, 0.85) 100%);
+  pointer-events: none;
+}
+
+.tour-stop-card-media .tour-stop-num-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  font-size: 10px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.tour-stop-card-media .featured-status-pill,
+.tour-stop-card-media .soon-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+}
+
+.tour-stop-card-media.placeholder-media {
+  background: radial-gradient(circle at 70% 30%, rgba(227, 38, 255, 0.18) 0%, rgba(18, 7, 28, 0.95) 75%),
+              linear-gradient(135deg, rgba(38, 179, 225, 0.14) 0%, rgba(11, 2, 20, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tour-stop-card-media.placeholder-media .media-flag-watermark {
+  font-size: 50px;
+  opacity: 0.38;
+  filter: drop-shadow(0 0 16px rgba(227, 38, 255, 0.3));
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.tour-stop-card:hover .tour-stop-card-media.placeholder-media .media-flag-watermark {
+  transform: scale(1.15);
+  opacity: 0.75;
+}
+
+.tour-stop-content {
+  padding: 18px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .roadmap-hero {
+    padding: 130px 5% 60px 5%;
+  }
+
+  .roadmap-featured-section,
+  .roadmap-full-section,
+  .roadmap-phases-section,
+  .roadmap-destination-section {
+    padding: 60px 5%;
+  }
+
+  .qualifiers-tour-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .roadmap-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-banner-box {
+    padding: 35px 20px;
+  }
+
+  .tour-stop-card {
+    padding: 18px;
+  }
+}
