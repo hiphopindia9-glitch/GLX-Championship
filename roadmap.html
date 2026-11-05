@@ -213,8 +213,8 @@
               </div>
 
               <div class="photo-strip-label">
-                <span>📸</span>
-                <span>Select Qingdao Finals Photo:</span>
+                <span>📸 Select Qingdao Finals Photo:</span>
+                <span class="active-crew-name" id="chinaActiveCrewName">GLX China Stage Crew</span>
               </div>
 
               <!-- Live Photo Selector Strip -->
@@ -300,19 +300,20 @@
           </article>
 
           <!-- 2. South Africa Qualifiers -->
-          <article class="featured-stop-card">
+          <article class="featured-stop-card" id="saFeaturedCard">
             <div class="featured-stop-media">
               <img
-                src="assets/roadMap/southAfrica/sa_qualifier.png"
-                alt="GLX South Africa Qualifiers Cape Town and Joburg"
+                id="saMainImg"
+                src="assets/roadMap/southAfrica/1.jpg"
+                alt="Devolution Dance Fam - GLX South Africa Qualifiers"
                 loading="lazy"
               />
               <div class="featured-stop-overlay"></div>
               <span class="featured-status-pill qualified"
                 >● Already Qualified</span
               >
-              <span class="media-photo-counter"
-                >📸 Official Delegation Photo</span
+              <span class="media-photo-counter" id="saPhotoCounter"
+                >📸 10 Live Photos</span
               >
             </div>
             <div class="featured-stop-body">
@@ -337,6 +338,145 @@
                 >
                 <span class="qualified-tag">🏅 Africa Continental Seed</span>
                 <span class="qualified-tag">🎟️ Bangkok 2027 Direct Ticket</span>
+              </div>
+
+              <div class="photo-strip-label">
+                <span>📸 Select South Africa Qualifier:</span>
+                <span class="active-crew-name" id="saActiveCrewName">Devolution Dance Fam</span>
+              </div>
+
+              <!-- Live Photo Selector Strip -->
+              <div class="china-photo-strip sa-photo-strip" id="saPhotoStrip">
+                <button
+                  type="button"
+                  class="sa-thumb-btn active"
+                  data-src="assets/roadMap/southAfrica/1.jpg"
+                  data-name="Devolution Dance Fam"
+                  title="Devolution Dance Fam"
+                  aria-label="Devolution Dance Fam"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/1.jpg"
+                    alt="Devolution Dance Fam"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/2.jpg"
+                  data-name="Future Legends (JNR Section)"
+                  title="Future Legends (Junior Section)"
+                  aria-label="Future Legends"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/2.jpg"
+                    alt="Future Legends"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/3.jpg"
+                  data-name="Legacy Fam"
+                  title="Legacy Fam"
+                  aria-label="Legacy Fam"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/3.jpg"
+                    alt="Legacy Fam"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/4.jpg"
+                  data-name="OBBF - Dynamic Dance Crew (JNR)"
+                  title="OBBF - Dynamic Dance Crew (Junior Section)"
+                  aria-label="OBBF Dynamic Dance Crew"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/4.jpg"
+                    alt="OBBF Dynamic Dance Crew"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/5.jpg"
+                  data-name="Sxldier Fam Krump"
+                  title="Sxldier Fam Krump"
+                  aria-label="Sxldier Fam Krump"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/5.jpg"
+                    alt="Sxldier Fam Krump"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/6.jpg"
+                  data-name="The Mighty King Zin Queens"
+                  title="The Mighty King Zin Queens"
+                  aria-label="The Mighty King Zin Queens"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/6.jpg"
+                    alt="The Mighty King Zin Queens"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/7.jpg"
+                  data-name="XO Family"
+                  title="XO Family"
+                  aria-label="XO Family"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/7.jpg"
+                    alt="XO Family"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/8.jpg"
+                  data-name="Xplicit (Adult Division)"
+                  title="Xplicit (Adult Division)"
+                  aria-label="Xplicit Adult"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/8.jpg"
+                    alt="Xplicit Adult"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/9.jpg"
+                  data-name="Kind Dance Studio"
+                  title="Kind Dance Studio"
+                  aria-label="Kind Dance Studio"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/9.jpg"
+                    alt="Kind Dance Studio"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="sa-thumb-btn"
+                  data-src="assets/roadMap/southAfrica/sa_qualifier.png"
+                  data-name="Cape Town Qualifiers Announcement"
+                  title="Cape Town Qualifiers Announcement"
+                  aria-label="Cape Town Qualifiers"
+                >
+                  <img
+                    src="assets/roadMap/southAfrica/sa_qualifier.png"
+                    alt="Cape Town Qualifiers"
+                  />
+                </button>
               </div>
 
               <div class="featured-stop-footer">
@@ -432,7 +572,11 @@
             data-region="asia"
           >
             <div class="tour-stop-card-media">
-              <span class="media-flag-watermark">🇮 </span>
+              <img
+                src="assets/roadMap/china/8.webp"
+                alt="GLX China Qualifiers"
+                loading="lazy"
+              />
               <div class="tour-stop-media-overlay"></div>
               <span class="tour-stop-num-pill">STOP #01</span>
               <span class="featured-status-pill confirmed">Confirmed</span>
@@ -462,7 +606,12 @@
             data-region="europe-africa"
           >
             <div class="tour-stop-card-media">
-              <div class="tour-stop-media-overlay">🇿🇦</div>
+              <img
+                src="assets/roadMap/southAfrica/1.jpg"
+                alt="GLX South Africa Qualifiers"
+                loading="lazy"
+              />
+              <div class="tour-stop-media-overlay"></div>
               <span class="tour-stop-num-pill">STOP #02</span>
               <span class="featured-status-pill confirmed">Confirmed</span>
             </div>
@@ -1250,6 +1399,7 @@
       // China Live Photo Switcher
       const chinaMainImg = document.getElementById("chinaMainImg");
       const chinaThumbBtns = document.querySelectorAll(".china-thumb-btn");
+      const chinaActiveName = document.getElementById("chinaActiveCrewName");
 
       if (chinaMainImg && chinaThumbBtns.length > 0) {
         chinaThumbBtns.forEach((btn) => {
@@ -1257,6 +1407,7 @@
             chinaThumbBtns.forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
             const newSrc = btn.getAttribute("data-src");
+            const crewTitle = btn.getAttribute("title") || btn.getAttribute("data-name");
             if (newSrc) {
               chinaMainImg.style.opacity = "0.4";
               chinaMainImg.style.transition = "opacity 0.18s ease";
@@ -1264,6 +1415,40 @@
                 chinaMainImg.src = newSrc;
                 chinaMainImg.style.opacity = "1";
               }, 100);
+            }
+            if (chinaActiveName && crewTitle) {
+              chinaActiveName.textContent = crewTitle;
+            }
+          });
+        });
+      }
+
+      // South Africa Live Photo Switcher
+      const saMainImg = document.getElementById("saMainImg");
+      const saThumbBtns = document.querySelectorAll(".sa-thumb-btn");
+      const saActiveCrewName = document.getElementById("saActiveCrewName");
+
+      if (saMainImg && saThumbBtns.length > 0) {
+        saThumbBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            saThumbBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            const newSrc = btn.getAttribute("data-src");
+            const crewName = btn.getAttribute("data-name") || btn.getAttribute("title");
+            if (newSrc) {
+              saMainImg.style.opacity = "0.4";
+              saMainImg.style.transition = "opacity 0.18s ease";
+              setTimeout(() => {
+                saMainImg.src = newSrc;
+                const imgEl = btn.querySelector("img");
+                if (imgEl && imgEl.alt) {
+                  saMainImg.alt = imgEl.alt;
+                }
+                saMainImg.style.opacity = "1";
+              }, 100);
+            }
+            if (saActiveCrewName && crewName) {
+              saActiveCrewName.textContent = crewName;
             }
           });
         });
